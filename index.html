@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#190711">
+<title>كل سنة وإنتِ طيبة يا YOKA ❤️</title>
+<style>
+:root{--bg:#160610;--panel:#260b1b;--pink:#ff477e;--gold:#ffd98a;--text:#fff4f8}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#45112e 0%,var(--bg) 58%);color:var(--text);font-family:Tahoma,Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+main{max-width:760px;margin:auto;padding:22px 15px 45px}
+.hero,.letter,.music-box{background:linear-gradient(145deg,rgba(70,16,47,.95),rgba(30,7,20,.96));border:1px solid #bd4976;border-radius:26px;padding:24px;margin-bottom:18px;box-shadow:0 12px 38px #0005}
+.hero{text-align:center;padding-top:35px}
+.heart{font-size:48px;animation:pulse 1.7s infinite;display:inline-block}
+h1{font-size:clamp(28px,7vw,44px);margin:10px 0;color:var(--gold)}
+h2{color:var(--gold);font-size:22px;margin:0 0 12px}
+p{line-height:1.95}
+.sub{color:#ffd5e3}
+button{border:0;border-radius:999px;padding:13px 20px;background:linear-gradient(120deg,#ff477e,#a20d4a);color:white;font-weight:bold;font-size:15px;cursor:pointer;box-shadow:0 5px 18px #ff477e35}
+button:active{transform:scale(.98)}
+audio{width:100%;margin:10px 0 4px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.photo{overflow:hidden;border-radius:18px;border:1px solid #d45b89;background:#210817;aspect-ratio:3/4}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.photo img:hover{transform:scale(1.035)}
+.caption{text-align:center;color:#ffd5e3;font-size:13px;margin:8px 0 0}
+.letter{text-align:center}
+.message{font-size:16px}
+footer{text-align:center;color:#c28ca4;font-size:12px;padding:15px}
+#surprise{display:none}
+#surprise.show{display:block;animation:fade .8s ease}
+.floating{position:fixed;bottom:-30px;pointer-events:none;animation:up 7s linear forwards;z-index:-1}
+@keyframes pulse{50%{transform:scale(1.12);filter:drop-shadow(0 0 14px #ff477e)}}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes up{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:430px){.hero,.letter,.music-box{padding:19px}.gallery{gap:9px}.message{font-size:15px}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+  <div class="heart">❤️</div>
+  <p class="sub">مفاجأة صغيرة مخصوص ليكي</p>
+  <h1>كل سنة وإنتِ طيبة يا YOKA</h1>
+  <p class="sub">26 / 10 / 1995 🌹</p>
+  <p>في يوم زي ده، الدنيا نورت بوجود أجمل روح… وعشان يومك مميز، حبيت أعملك ذكرى تفضلي تبتسمي كل ما تشوفيها. 💖</p>
+  <button onclick="openSurprise()">افتحي مفاجأتك يا يوكتي 💌</button>
+</section>
+
+<section id="surprise" class="letter">
+  <h2>رسالة من القلب 💌</h2>
+  <p class="message">كل سنة وإنتِ طيبة يا أجمل YOKA، يا رب سنتك الجديدة تكون مليانة فرحة وراحة بال ونجاح، وربنا يحققلك كل اللي نفسك فيه ويبعد عنك أي زعل. ضحكتك حلوة وتستاهلي كل حاجة حلوة في الدنيا. أتمنى تفضلي دايمًا مبسوطة ومنوّرة الدنيا بروحك الجميلة. ❤️🌷</p>
+  <p style="color:var(--gold);font-weight:bold">كل سنة وإنتِ أجمل حكاية وأحلى ذكرى 🎂❤️</p>
+</section>
+
+<section class="music-box">
+  <h2>أغنيتك 🎵</h2>
+  <p class="sub">شغّلي الأغنية من هنا؛ الموبايلات غالبًا بتحتاج ضغطة منك عشان تسمح بالصوت.</p>
+  <audio controls loop preload="metadata">
+    <source src="assets/kol-sana.mp3" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+</section>
+
+<section class="music-box">
+  <h2>ألبوم صورك 📸</h2>
+  <p class="sub">أربع صور حلوة عشان تفضل الذكرى موجودة ❤️</p>
+  <div class="gallery">
+    <div class="photo"><img src="assets/yoka-1.jpg" alt="YOKA - صورة 1" loading="lazy"></div>
+    <div class="photo"><img src="assets/yoka-2.jpg" alt="YOKA - صورة 2" loading="lazy"></div>
+    <div class="photo"><img src="assets/yoka-3.jpg" alt="YOKA - صورة 3" loading="lazy"></div>
+    <div class="photo"><img src="assets/yoka-4.jpg" alt="YOKA - صورة 4" loading="lazy"></div>
+  </div>
+  <p class="caption">كل صورة ليها حكاية… وكل حكاية ليها مكان ❤️</p>
+</section>
+<footer>Made with ❤️ for YOKA • 26/10/1995</footer>
+</main>
+<script>
+function openSurprise(){
+ const s=document.getElementById('surprise');
+ s.classList.add('show');
+ s.scrollIntoView({behavior:'smooth',block:'center'});
+ for(let i=0;i<18;i++){
+  const h=document.createElement('span');h.className='floating';h.textContent=['❤️','💖','💕','🌹'][Math.floor(Math.random()*4)];
+  h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*20)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';
+  document.body.appendChild(h);setTimeout(()=>h.remove(),8500);
+ }
+}
+</script>
+</body>
+</html>
